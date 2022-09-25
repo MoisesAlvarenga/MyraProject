@@ -1,0 +1,103 @@
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: gray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 5vw 1fr;
+  grid-template-rows: 8vh 1fr;
+  font-family: sans-serif;
+}
+
+.header-menu {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  border-bottom-width: 3px;
+  border-color: orange;
+  border-style: solid;
+}
+
+.nav-bar {
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: 92vh;
+  width: 50px;
+}
+
+.card-team {
+  width: 20vw;
+  background-color: rgb(196, 196, 196);
+}
+
+.dashboard {
+  background-image: url("/assets/background/dashboard.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 1010px;
+  margin-left: 10px;
+}
+
+.logo {
+  float: left;
+  background-color: black;
+  height: 100%;
+  width: 25%;
+  h1 {
+    margin-left: 10px;
+    width: 100%;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+
+.menu {
+  float: right;
+  background-color: black;
+  height: 100%;
+  width: 4%;
+}
+
+.menu:hover {
+  float: right;
+  background-color: orange;
+  height: 100%;
+  width: 4%;
+}
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+button {
+  min-width: 90%;
+  min-height: 10%;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+
+  img {
+    width: 80%;
+    margin-top: 2px;
+  }
+}
+
+button:hover {
+  background-color: orange;
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container-coordinator">
+  <div [(ngModel)]="leader">
+    <div class="image-leader">
+      <img [src]="leader.imageURL" alt="" />
+    </div>
+
+    <h3 class="name-leader">{{ leader.name }}</h3>
+    <p class="function-leader">{{ leader.function }}</p>
+  </div>
+</div>
+
+<div class="container-collaborator">
+  <div *ngFor="let collaborator of collaborators" class="collaborator">
+    <div class="image-collaborator">
+      <img [src]="collaborator.imageURL" alt="" />
+    </div>
+
+    <div class="info">
+      <h3 class="name-collaborator">{{ collaborator.name }}</h3>
+      <p class="function-collaborator">{{ collaborator.function }}</p>
+    </div>
+  </div>
+</div>

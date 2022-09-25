@@ -1,0 +1,69 @@
+<form [formGroup]="loginValidator" class="container">
+  <img src="/assets/logo/myra-logo.png" alt="logo Myra" />
+  <br />
+
+  <label>Usuário</label>
+  <input
+    type="text"
+    class="input-user"
+    [(ngModel)]="login.user"
+    [(ngModel)]="loginAuth.user"
+    formControlName="user"
+    [class.valid]="loginValidator.controls['user'].valid"
+    [class.invalid]="
+      loginValidator.controls['user'].invalid &&
+      loginValidator.controls['user'].touched &&
+        loginValidator.controls['user'].dirty
+    "
+  />
+
+  <div
+    class="error-user"
+    *ngIf="
+      loginValidator.controls['user'].invalid &&
+      loginValidator.controls['user'].touched &&
+        loginValidator.controls['user'].dirty
+    "
+  >
+    <small
+      class="error-message"
+      *ngIf="loginValidator.controls['user'].hasError('required')"
+    >
+      O campo usuario precisa ser preenchido.
+    </small>
+  </div>
+
+  <label class="label-password">Senha</label>
+  <input
+    type="password"
+    class="input-password"
+    [(ngModel)]="login.password"
+    formControlName="password"
+    [class.valid]="loginValidator.controls['password'].valid"
+    [class.invalid]="
+      loginValidator.controls['password'].invalid &&
+      loginValidator.controls['password'].touched &&
+        loginValidator.controls['password'].dirty
+    "
+  />
+
+  <div
+    class="error-user"
+    *ngIf="
+      loginValidator.controls['password'].invalid &&
+      loginValidator.controls['password'].touched &&
+        loginValidator.controls['password'].dirty
+    "
+  >
+    <small
+      class="error-message"
+      *ngIf="loginValidator.controls['password'].hasError('required')"
+    >
+      O campo senha precisa ser preenchido.
+    </small>
+  </div>
+
+  <button (click)="onSubmit()">Entrar</button>
+
+  <a href="">Esqueci minha senha</a>
+</form>

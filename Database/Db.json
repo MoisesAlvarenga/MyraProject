@@ -1,0 +1,57 @@
+{
+    "login":
+        {
+            "user": "admin",
+            "password": "admin"
+        },
+        
+    "leader":{
+        "id": 1,
+        "name": "Brimstone",
+        "function":"Coordinator",
+        "imageURL":"/assets/team/brimstone.png"
+    },
+
+    "collaborators":[{
+        "id": 1,
+        "name": "Viper",
+        "function":"Supervisor",
+        "imageURL":"/assets/team/viper.png"},
+
+        {
+            "id": 2,
+            "name": "Omen",
+            "function":"Supervisor",
+            "imageURL":"/assets/team/omen.png"
+        },
+
+        {
+            "id": 3,
+            "name": "Killjoy",
+            "function":"Supervisor",
+            "imageURL":"/assets/team/killjoy.png"
+        },
+
+        {
+            "id": 4,
+            "name": "Cypher",
+            "function":"Supervisor",
+            "imageURL":"/assets/team/cypher.png"
+        },
+
+        {
+            "id": 5,
+            "name": "Sova",
+            "function":"Supervisor",
+            "imageURL":"/assets/team/sova.png"
+        },
+
+        {
+            "id": 6,
+            "name": "Sage",
+            "function":"Supervisor",
+            "imageURL":"/assets/team/sage.png"
+        }
+    ]
+    
+}
